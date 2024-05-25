@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <meta name="author" content="Myky" />
+        <meta name="description" content="The official clearview.com website" />
+        <meta name="”format-detection”" content='”telephone"="no”' />
+        <title>clearview.com</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./Icons/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="styles/shared.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="backdrop"></div>
+        <div class="mobile-nav">
+            <ul class="mobile-nav__ul">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="active-script" href="services.html">Services</a>
+                </li>
+            </ul>
+        </div>
+
+        <header class="header">
+            <div class="header__line"></div>
+
+            <a href="index.html" class="header__logo-container">
+                <img
+                    src="./Icons/umydronom-no-text-icon_500x323.png"
+                    alt="Logo"
+                    width="500"
+                    height="323"
+                />
+            </a>
+
+            <div class="header__nav-container">
+                <div class="header__squeege-container">
+                    <img
+                        src="./Icons/squeege-icon_512x512.png"
+                        alt="squeege animation"
+                        width="512"
+                        height="512"
+                    />
+                </div>
+
+                <!-- Main navigation -->
+                <nav class="header__nav">
+                    <ul class="header__ul">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="active-script" href="services.html"
+                                >Services</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger button -->
+                <button
+                    id="hb-btn"
+                    class="hb-btn no-select"
+                    onclick="openMobileNav(); openModal();"
+                >
+                    <span class="hb-btn__line"></span>
+                    <span class="hb-btn__line"></span>
+                    <span class="hb-btn__line"></span>
+                </button>
+            </div>
+        </header>
+
+        <section class="welcome-container">
+            <p class="welcome-title">Employed technology</p>
+            <p>
+                For facade and window cleaning, we utilize two methods. If the
+                facade is traditionally soiled, the drone applies a special
+                solution by foaming it onto the facade at low pressure. If the
+                buildings have not been cleaned for a long time, or are
+                extremely dirty, the process involves cleaning the facade and
+                windows using the pure water method.
+
+                <br />
+                <br />
+
+                The pure water method simply involves using water treated with
+                reverse osmosis, heated to 70 degrees, and applied under high
+                pressure by the drone. This means that window cleaning is
+                environmentally friendly because it is done without chemicals,
+                and the windows stay cleaner over time. It also reduces the risk
+                of surface damage, such as streaks caused by more traditional
+                and hazardous manual cleaning methods.
+            </p>
+        </section>
+
+        <main>
+            <section class="se-service__container">
+                <p class="se-service__title">Services details</p>
+
+                <div class="se-service__box" id="services-window">
+                    <p class="se-service__subtitle">Windows Cleaning</p>
+
+                    <div class="se-service__box-element">
+                        <img
+                            src="./Images/about-service-windows-img_800x600.jpg"
+                            alt="Illustrational image"
+                            width="800"
+                            height="600"
+                            class="se-services-img"
+                        />
+                        <p class="se-services__description">
+                            Commercial window cleaning at heights can be very
+                            time-consuming. We offer a new, more efficient, and
+                            safer way to provide high-rise window cleaning,
+                            which is considered faster, thereby reducing costs.
+
+                            <br />
+                            <br />
+
+                            Modern buildings, including residential complexes,
+                            office buildings, and commercial properties in
+                            general, often have large glass surfaces. Due to
+                            their height, design, and location, performing
+                            regular maintenance can be time-consuming and
+                            costly. These buildings often require work at
+                            heights, which is expensive and carries risks.
+
+                            <br />
+                            <br />
+
+                            Using a work drone is considered safe. Working at
+                            heights can be dangerous, and utilizing this drone
+                            technology eliminates the need for workers to
+                            physically enter these heights and hazardous
+                            environments. As a result, the foundations of this
+                            technology are considered much safer when working in
+                            hazardous environments.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="se-service__box" id="services-facade">
+                    <p class="se-service__subtitle">Facade Cleaning</p>
+
+                    <div class="se-service__box-element">
+                        <img
+                            src="./Images/about-service-facade-img_800x514.jpg"
+                            alt="Illustational image"
+                            width="800"
+                            height="514"
+                            class="se-services-img"
+                        />
+                        <p class="se-services__description">
+                            Until now, the cleaning of high-rise windows and
+                            facades has been carried out exclusively by
+                            professional cleaning companies specializing in
+                            rappelling, sky lifts, and, for smaller buildings,
+                            expensive scaffolding systems, cradles, or other
+                            lifting devices. High-rise window cleaning is
+                            considered one of the six most dangerous
+                            professions. Additionally, due to the costs
+                            involved, these tasks are performed less frequently,
+                            resulting in windows remaining dirty for longer
+                            periods.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="se-service__box" id="services-roof">
+                    <p class="se-service__subtitle">Roof Washing</p>
+
+                    <div class="se-service__box-element">
+                        <img
+                            src="./Images/about-service-roof-img_800x600.jpg"
+                            alt="Illustational image"
+                            width="800"
+                            height="514"
+                            class="se-services-img"
+                        />
+                        <p class="se-services__description">
+                            Drone roof washing offers safer, faster, and more
+                            efficient cleaning. Drones access hard-to-reach
+                            areas, reducing the risk of accidents and injuries.
+                            Precise control over water pressure and solutions
+                            ensures thorough cleaning without damaging roof
+                            materials, providing a cost-effective solution for
+                            maintaining clean roofs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="se-service__box" id="services-solar">
+                    <p class="se-service__subtitle">Solar Panels Cleaning</p>
+
+                    <div class="se-service__box-element">
+                        <img
+                            src="./Images/about-service-solar-panel-img_800x600.jpg"
+                            alt="Illustational image"
+                            width="800"
+                            height="514"
+                            class="se-services-img"
+                        />
+                        <p class="se-services__description">
+                            Solar panel drone washing offers efficient cleaning,
+                            maximizing panel performance. Drones access
+                            difficult areas, ensuring thorough cleaning without
+                            risk of damage. Regular cleaning removes dust and
+                            pollutants, preventing buildup that reduces energy
+                            efficiency. This method is cost-effective and
+                            environmentally friendly, maintaining optimal solar
+                            power generation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact contact--bright-background">
+                <p class="contact__title">Kontakt</p>
+
+                <p class="contact__intro">
+                    If you're a building owner, developer, property manager, or
+                    cleaning company with contracts or needs for window
+                    cleaning, and you're looking for a way to reduce costs and
+                    create a safer way to perform this service, then we have a
+                    solution for you.
+
+                    <br />
+                    <br />
+
+                    Our company has many ways in which we can provide this
+                    service directly and indirectly. Whether you're a direct
+                    client looking for a one-time service, a construction
+                    company seeking longer-term contracts for a specified
+                    period, a developer and building owner looking to reduce
+                    costs, or just curious and want to explore this technology
+                    to see how it can be used. Contact us, and we'll be happy to
+                    help find the best cost-effective and safer solution for
+                    your needs.
+                </p>
+
+                <div class="horizontal-breakup-line"></div>
+
+                <div class="contact__container">
+                    <div class="contact__box">
+                        <!-- <p class="contact__subtitle">Kontakné informácie</p> -->
+                        <div class="contact__info-box">
+                            <img
+                                class="contact__icon"
+                                src="./Icons/phone-icon_512x512png.png"
+                                alt="Phone icon"
+                                width="512"
+                                height="512"
+                            />
+                            <a href="tel:0000000000">Phone: 0000000000</a>
+                        </div>
+                        <div class="contact__info-box">
+                            <img
+                                class="contact__icon"
+                                src="./Icons/email-icon_512x512.png"
+                                alt="Email icon"
+                                width="512"
+                                height="512"
+                            />
+                            <a href="mailto:">Email: clearview.test.com</a>
+                        </div>
+                    </div>
+
+                    <div class="breakup-line"></div>
+
+                    <div class="contact__box contact__box--form">
+                        <p class="contact__subtitle">Contact us</p>
+
+                        <form
+                            class="form"
+                            action="https://getform.io/f/lbjkvqva"
+                            method="POST"
+                        >
+                            <div class="form__box">
+                                <label for="email" class="contact__label"
+                                    >Email:</label
+                                >
+
+                                <input
+                                    type="email"
+                                    name="User's email"
+                                    autocomplete="Empty-email"
+                                    id="email"
+                                    class="contact__input"
+                                    placeholder="Your email here"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form__box">
+                                <label for="message" class="contact__label"
+                                    >Message:</label
+                                >
+
+                                <textarea
+                                    name="User's message"
+                                    autocomplete="Empty-message"
+                                    id="message"
+                                    class="form__textarea"
+                                    cols="20"
+                                    rows="10"
+                                    placeholder="Your message here"
+                                ></textarea>
+                            </div>
+
+                            <div class="button__box">
+                                <button
+                                    onclick="printContactMessage()"
+                                    class="form__button"
+                                    type="submit"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer__container footer__container--dark-background">
+            <div class="footer__box">
+                <div class="footer__logo-container">
+                    <a>
+                        <img
+                            src="./Icons/umydronom-no-text-icon-bright_500x323.png"
+                            alt="Logo"
+                            width="500"
+                            height="323"
+                            class="footer__logo"
+                        />
+                    </a>
+                </div>
+
+                <div class="footer__nav">
+                    <p class="footer__title">clearview.com</p>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                </div>
+
+                <div class="footer__nav">
+                    <p class="footer__title">Follow us</p>
+                    <a href="#">
+                        <img
+                            src="./Icons/instagram-icon_512x512.png"
+                            alt="Instagram icon"
+                            width="512"
+                            height="512"
+                            class="footer__icon"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="./Icons/facebook-icon_512x512.png"
+                            alt="Facebook icon"
+                            width="512"
+                            height="512"
+                            class="footer__icon"
+                        />
+                    </a>
+                </div>
+            </div>
+
+            <div class="horizontal-breakup-line"></div>
+
+            <div class="footer__copyright">
+                <img width="20" height="20" src="./Icons/creator-logo.png" />
+                <p>&copy; <span id="current-year"></span> Designed by Myky</p>
+            </div>
+        </footer>
+    </body>
+</html>

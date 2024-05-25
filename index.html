@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <meta name="author" content="Myky" />
+        <meta name="description" content="The official clearview.com website" />
+        <meta name="”format-detection”" content='”telephone"="no”' />
+        <title>clearview.com</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./Icons/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="styles/shared.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="backdrop"></div>
+        <div class="mobile-nav">
+            <ul class="mobile-nav__ul">
+                <li>
+                    <a class="active-script" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+            </ul>
+        </div>
+
+        <header class="header">
+            <div class="header__line"></div>
+
+            <a href="index.html" class="header__logo-container">
+                <img
+                    src="./Icons/umydronom-no-text-icon_500x323.png"
+                    alt="Logo"
+                    width="500"
+                    height="323"
+                />
+            </a>
+
+            <div class="header__nav-container">
+                <div class="header__squeege-container">
+                    <img
+                        src="./Icons/squeege-icon_512x512.png"
+                        alt="squeege animation"
+                        width="512"
+                        height="512"
+                    />
+                </div>
+
+                <!-- Main navigation -->
+                <nav class="header__nav">
+                    <ul class="header__ul">
+                        <li>
+                            <a class="active-script" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger button -->
+                <button
+                    id="hb-btn"
+                    class="hb-btn no-select"
+                    onclick="openMobileNav(); openModal();"
+                >
+                    <span class="hb-btn__line"></span>
+                    <span class="hb-btn__line"></span>
+                    <span class="hb-btn__line"></span>
+                </button>
+            </div>
+        </header>
+
+        <section class="hero__container">
+            <img
+                src="./Images/hero-img_2200x1442.jpg"
+                alt="Glass architecture"
+                width="2200"
+                height="1442"
+            />
+
+            <div class="hero__slogan">
+                <span>Washing of facades, windows, roofs and solar panels</span>
+                <p>Leave it to us</p>
+            </div>
+
+            <button class="button button--hero" onclick="scrollToContact()">
+                <p>Contact</p>
+            </button>
+        </section>
+
+        <main>
+            <section id="service" class="service__container">
+                <p class="service__title service__title--main">
+                    Services Details
+                </p>
+
+                <div class="service__box">
+                    <p class="service__title">Windows cleaning</p>
+                    <img
+                        class="service__icon"
+                        src="./Icons/window-icon_512x512.png"
+                        alt="Window icon"
+                        width="512"
+                        height="512"
+                    />
+                    <a
+                        href="services.html#services-window"
+                        class="service__description"
+                    >
+                        Details &raquo;
+                    </a>
+                </div>
+
+                <div class="breakup-line"></div>
+
+                <div class="service__box">
+                    <p class="service__title">Facade Cleaning</p>
+                    <img
+                        class="service__icon"
+                        src="./Icons/office-icon_512x512.png"
+                        alt="Building icon"
+                        width="512"
+                        height="512"
+                    />
+                    <a
+                        href="services.html#services-facade"
+                        class="service__description"
+                        >Details &raquo;</a
+                    >
+                </div>
+
+                <div class="breakup-line"></div>
+
+                <div class="service__box">
+                    <p class="service__title">Roof Washing</p>
+                    <img
+                        class="service__icon"
+                        src="./Icons/roof_icon_512x512.png"
+                        alt="Roof icon"
+                        width="512"
+                        height="512"
+                    />
+                    <a
+                        href="services.html#services-roof"
+                        class="service__description"
+                        >Details &raquo;</a
+                    >
+                </div>
+
+                <div class="breakup-line"></div>
+
+                <div class="service__box">
+                    <p class="service__title">Solar Panels Cleaning</p>
+                    <img
+                        class="service__icon"
+                        src="./Icons/solar-panel_icon_512x512.png"
+                        alt="Solar-panel icon"
+                        width="512"
+                        height="512"
+                    />
+                    <a
+                        href="services.html#services-solar"
+                        class="service__description"
+                        >Details &raquo;</a
+                    >
+                </div>
+            </section>
+
+            <section class="drone-washing">
+                <p class="drone-washing__title">Drone washing</p>
+                <p class="drone-washing__description">
+                    Until now, the cleaning of high-rise windows and facades has
+                    only been carried out by professional cleaning companies
+                    that specialize in abseiling, skylifts and for smaller
+                    buildings have implemented expensive scaffolding, use booms
+                    or other lifting equipment.
+
+                    <br />
+                    <br />
+
+                    With the innovation and development of this solution by
+                    using drones eliminates the need for abseiling with rope
+                    access and lifts, making it safer, more efficient and cost
+                    effective more acceptable solution than traditional methods.
+                </p>
+            </section>
+
+            <section class="drone-washing-advantages">
+                <p class="drone-washing-advantages__title">
+                    The benefits of using a work drone
+                </p>
+
+                <ul>
+                    <li>
+                        <img src="./Icons/check-mark-icon_512x512.png" />
+                        <p>
+                            Fast and efficient, 5-10 times faster than
+                            traditional methods
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./Icons/check-mark-icon_512x512.png" />
+                        <p>Easier access to hard-to-reach areas</p>
+                    </li>
+                    <li>
+                        <img src="./Icons/check-mark-icon_512x512.png" />
+                        <p>Safer and more reliable.</p>
+                    </li>
+                    <li>
+                        <img src="./Icons/check-mark-icon_512x512.png" />
+                        <p>No height equipment is required for access</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contact" class="contact">
+                <p class="contact__title">Contact</p>
+
+                <p class="contact__intro">
+                    If you're a building owner, developer, property manager, or
+                    cleaning company with contracts or needs for window
+                    cleaning, and you're looking for a way to reduce costs and
+                    create a safer way to perform this service, then we have a
+                    solution for you.
+
+                    <br />
+                    <br />
+
+                    Our company has many ways in which we can provide this
+                    service directly and indirectly. Whether you're a direct
+                    client looking for a one-time service, a construction
+                    company seeking longer-term contracts for a specified
+                    period, a developer and building owner looking to reduce
+                    costs, or just curious and want to explore this technology
+                    to see how it can be used. Contact us, and we'll be happy to
+                    help find the best cost-effective and safer solution for
+                    your needs.
+                </p>
+
+                <div class="horizontal-breakup-line"></div>
+
+                <div class="contact__container">
+                    <div class="contact__box">
+                        <!-- <p class="contact__subtitle">Kontakné informácie</p> -->
+                        <div class="contact__info-box">
+                            <img
+                                class="contact__icon"
+                                src="./Icons/phone-icon_512x512png.png"
+                                alt="Phone icon"
+                                width="512"
+                                height="512"
+                            />
+                            <a href="tel:0000000000">Phone: 0000000000</a>
+                        </div>
+                        <div class="contact__info-box">
+                            <img
+                                class="contact__icon"
+                                src="./Icons/email-icon_512x512.png"
+                                alt="Email icon"
+                                width="512"
+                                height="512"
+                            />
+                            <a href="mailto:">Email: clearview.test.com</a>
+                        </div>
+                    </div>
+
+                    <div class="breakup-line"></div>
+
+                    <div class="contact__box contact__box--form">
+                        <p class="contact__subtitle">Contact us</p>
+
+                        <form
+                            class="form"
+                            action="https://getform.io/f/lbjkvqva"
+                            method="POST"
+                        >
+                            <div class="form__box">
+                                <label for="email" class="contact__label"
+                                    >Email:</label
+                                >
+
+                                <input
+                                    type="email"
+                                    name="User's email"
+                                    autocomplete="Empty-email"
+                                    id="email"
+                                    class="contact__input"
+                                    placeholder="Your email here"
+                                    required
+                                />
+
+                                <!-- <input
+                                    type="hidden"
+                                    name="_next"
+                                    value="https://www.umydronom.sk/thankyou.html"
+                                /> -->
+                            </div>
+
+                            <div class="form__box">
+                                <label for="message" class="contact__label"
+                                    >Message:</label
+                                >
+
+                                <textarea
+                                    name="User's message"
+                                    autocomplete="Empty-message"
+                                    id="message"
+                                    class="form__textarea"
+                                    cols="20"
+                                    rows="10"
+                                    placeholder="Your message here"
+                                ></textarea>
+                            </div>
+
+                            <div class="button__box">
+                                <button
+                                    onclick="printContactMessage()"
+                                    class="form__button"
+                                    type="submit"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer__container">
+            <div class="footer__box">
+                <div class="footer__logo-container">
+                    <a>
+                        <img
+                            src="./Icons/umydronom-no-text-icon_500x323.png"
+                            alt="Logo"
+                            width="500"
+                            height="323"
+                            class="footer__logo"
+                        />
+                    </a>
+                </div>
+
+                <div class="footer__nav">
+                    <p class="footer__title">clearview.com</p>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                </div>
+
+                <div class="footer__nav">
+                    <p class="footer__title">Follow us</p>
+                    <a href="#">
+                        <img
+                            src="./Icons/instagram-icon_512x512.png"
+                            alt="Instagram icon"
+                            width="512"
+                            height="512"
+                            class="footer__icon"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="./Icons/facebook-icon_512x512.png"
+                            alt="Facebook icon"
+                            width="512"
+                            height="512"
+                            class="footer__icon"
+                        />
+                    </a>
+                </div>
+            </div>
+
+            <div class="horizontal-breakup-line"></div>
+
+            <div class="footer__copyright">
+                <img width="20" height="20" src="./Icons/creator-logo.png" />
+                <p>&copy; <span id="current-year"></span> Designed by Myky</p>
+            </div>
+        </footer>
+    </body>
+</html>
